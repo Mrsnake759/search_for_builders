@@ -6,51 +6,75 @@
       <div class="vacancies_block-table">
         <div class="vacancies_item">
           <div>Бетонщик</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Арматурщик</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Разнорабочий</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Сварщик-монтажник</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Штукатур-маляр</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Электромонтажник</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+          <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Газосварщик</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Монолитщик</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Монтажник</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Стропальщик</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Плиточник</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
         <div class="vacancies_item">
           <div>Отделочник</div>
-          <img class="vacancies_item-img" src="../assets/square.png">
+                    <div class="vacancies_item-text">100 000 - 160 000 руб.</div>
+          <img class="vacancies_item-img" src="../assets/concrete.png">
+          <button class="apply-button" onclick="window.location.href='https://example.com'">Подать заявку</button>
         </div>
       </div>
     </div>
@@ -72,11 +96,20 @@ export default {
 
   &_item {
     padding: 15px;
-    background-color: #D9D9D9;
+    //background-color: #D9D9D9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    //transition: transform 0.3s ease-in-out;
+
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
+
+    &-text {
+      display: none;
+      font-size: 16px;
+    }
 
     &-img {
       align-self: end;
@@ -111,4 +144,54 @@ export default {
     }
   }
 }
+
+.apply-button {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: end;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.vacancies_item:hover {
+  background-color: #0671E0;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+  //transform: rotate(5deg);
+  //transform: translateY(-15px);
+  animation: wiggle 0.3s ease-in-out forwards;
+
+}
+
+.vacancies_item-text:hover {
+  display: block;
+  color: white;
+}
+
+.vacancies_item:hover img {
+  display: none;
+}
+
+.vacancies_item:hover .vacancies_item-text {
+  display: block;
+}
+
+.vacancies_item:hover .apply-button {
+  display: block;
+
+}
+
 </style>
